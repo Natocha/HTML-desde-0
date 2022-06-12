@@ -1,0 +1,162 @@
+<!--este es un comentario,es utilizado para mostrar informacion que no aparezca en el navegador-->
+<!DOCTYPE html>
+<html>
+<head>
+    <a target="_blank" href="http://127.0.0.1:5500/index2.html" >clic aqui para ver CSS </a>
+
+    <title>titulo de la web</title>
+    <!--esto es utiloizado para referenciar que todo lo que sea una tabla,una columna,encabezado o fila se vea con un marco de color negro-->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <!--esto es un header,utilizado para que todo lo que escribas se situe en la parte superior de la pagina-->
+    <header><h1>yo estoy en un encabezado</h1></header>
+</head>
+<body>
+
+
+    <h1>Heading level 1</h1> 
+    <h2>Heading level 2</h2>    
+    <h3>Heading level 3</h3>
+    <h4>Heading level 4</h4>
+    <h5>Heading level 5</h5>
+    <h6>Heading level 6</h6>
+    
+    <p>esto es un parrafo,es utilizado para escribir el texto por debajo de los titulos/encabezados</p>
+    <hr>
+    
+    <p>aqui arriba hay un hr que hace una linea para separar</p>
+    
+    <p>este parrafo contiene unas <span style="color:red">letras en rojo</span> para usar la funcion span</p>
+    
+    <br>
+    
+    <p>aqui arriba hay un br para dejar un espacio en blanco</p>
+    <!--el a viene de anchor,o ancla,es utilizado para dejar un link que te lleve a una pagina con el comando href-->
+    <a href="https://www.leagueofgraphs.com/es/champions/runes/zed">Esto te lleva a una pagina de runas de zed</a>
+    
+    <br>
+    <!--esto hace lo mismo,pero con la funcion target,blank hace abra otra pesaña adyacente-->
+    <a target= "_blank" href="https://www.leagueofgraphs.com/es/champions/runes/zed">Esto te lleva a una pagina de runas de zed pero te abre otra pestaña</a>
+    
+    <br>
+    
+    <h2>Aqui hay una imagen de zed</h2>
+    <!--esto es una imagen,la cual puede seleccionarse de dos maneras,puede ser elegida mediante un link en una pagina web,o descargada y situada en un apartado o en una carpeta como lo hize yo-->
+    <img src="styles/img/ZegIMG.jpg" width="400"/> 
+    <!--esto es un formulario,es utilizado principalmente para recopilar la informacion del usuario que puede ser desde GET o POST-->
+    <form action="/formulario" method="POST">
+        <!--lo primero es darle el nombre del que este al lado del campo,que puede ser opcional,despues se le pregunta de que tipo seria,si es text sale normal,si es password salen censuradas los caracteres,etc.-->
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre"  name="Nombre" placeholder="Escribe tu Nombre"/>
+        <!--despues de eso se le da la id de como es referenciado para utilizar funciones en torno a esta y por ultimo se le da un placeholder que es el texto que aparece en color tenue bajo del campo-->
+        <hr>
+        <!--el tipo password censura los caracteres-->
+        <label for="Contraseña"> Contraseña:</label>
+        <input type="password" id="Contraseña"  name="Contraseña" placeholder="escribe tu Contraseña"/>
+        
+        <hr>
+        <!--el tipo email hace que si o si tenga que tener una arroba/@ en su campo para ingresarlo-->
+        <label for="Email"> Email: </label>
+        <input type="Email"id="Email"  name="Email" placeholder="Escribe tu Email"/>
+        
+        <hr>
+        <!--el radio es un circulito que se utiliza para el multiple choice-->
+        <label for="radio"> radio:</label>
+        <input type="radio" /> 
+        
+        <hr>
+        <!--el checkbox es lo mismo que el radio,pero puedes seleccionar mas de uno-->
+        <label for="checkbox"> checkbox:</label>
+        <input type="checkbox" /> 
+        
+        <hr>
+        <!--el file sirve para subir un archivo,el que sea,desde tu computadora-->
+        <label for="file"> Elige un archivo</label>
+        <input type="file" /> 
+        
+        <hr>
+        <!--y el textarea es como dice,una zona donde puede entrar texto que puede ser expandible al menos si no queremos que haga eso-->
+        <textarea id="comentario" placeholder="¿te gusta mi pagina?"></textarea>
+        
+        <hr>
+        <!--el sumbit es el boton para subir todo el formulario -->
+        <input type="submit" />
+
+        <hr>
+        <!--y el reset es para resetear todo el formulario-->
+        <button type="reset">Resetear Formulario</button>
+    </form>
+<!--UL es una lista desordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <ol>
+<!--UL es una lista desordenada-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+   <!--esto es una tabla,-->
+    <table>
+      <tr>
+        <th>----</th>
+        <th>lunes</th>
+        <th>martes</th>
+        <th>miercoles</th>
+        <th>jueves</th>
+        <th>viernes</th>
+      </tr>  
+      <tr>
+          <th>7-8AM</th>
+          <td>matematica</td>
+          <td>lengua</td>
+          <td>programacion</td>
+          <td>Ingles</td>
+          <td>FVT</td>
+      </tr>
+      <tr>
+        <th>8-9AM</th>
+        <td>matematica</td>
+        <td>lengua</td>
+        <td>programacion</td>}
+        <td>Ingles</td>
+        <td>FVT</td>
+        
+        
+    </tr>
+    <tr>
+        <th>9-10AM</th>
+        <td>matematica</td>
+        <td>lengua</td>
+        <td>programacion</td>
+        <td>Ingles</td>
+        <td>FVT</td>
+    </tr>
+    </table>
+
+<!--un div no cambia el contenido que aguarda este,sino que lo contiene-->
+<div>
+    <p>yo soy un parrafo dentro de un div</p>
+</div>
+<!--El elemento <section> define la sección en un documento.-->
+<section>
+    yo soy una seccion
+</section>
+<!--la seccion article especifica un contenido independiente y autónomo.-->
+<article>
+    yo soy un articulo
+</article>
+</body>
+<footer>
+<!--y el footer es lo mismo que el header,nomas que aparece en el pie de pagina-->
+   <h1> yo estoy en un footer</h1>
+</footer>
+
+</html>
